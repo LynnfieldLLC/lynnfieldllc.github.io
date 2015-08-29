@@ -35,19 +35,10 @@
         vertical-align: middle;
     }
     
-    img[alt=icon] {
-        display: flex;
-        position: relative;
-        float: left;
-        max-width: 25%;
-        padding-right: 40px;
-        margin: 0;
-    }
-    
     span.icon-image { 
         position: relative;
         float: left;
-        min-width: 100px;
+        min-width: 200px;
         max-width: 25%;
         padding-right: $spacing-unit;
         margin: 0;
