@@ -3,7 +3,7 @@ layout: page
 title: Contact Us
 permalink: /contact-us/
 ---
-<form action="//formspree.io/lynnfield.llc@gmail.com" role="form" method="POST">
+<form action="//formspree.io/support@lynnfieldllc.com" role="form" method="POST">
 	<div class="form-group">
 		<label for="name">What's your name?</label>
     	<input id="name" type="text" name="name" class="form-control">
