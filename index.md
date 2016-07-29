@@ -35,19 +35,16 @@ layout: default
 </div>
 </div>
 
-{::comment}
-WHY CAN I NOT GET THIS TO WORK???
-![icon](/assets/military_retire_icon.png)
-
-## Military Retirement will calculate:
-- RETIREMENT PAY : Based on Rank, Years and Months of Service, and Date of Retirement 
-- SURVIVOR BENEFIT PLAN : Benefit and Premium 
-- TRICARE MEDICAL INSURANCE : Options and Premium 
-- DISABILITY PAY : Based on disability rating 
-- VETERANS GROUP LIFE INSURANCE : Coverage and Premium 
-- FEDERAL TAXES : Based on filing status
-{:/comment}
-
 ## Screen Shots
 
-|[![](/assets/military_retire_main.png)](/assets/military_retire_main.png)|[![](/assets/military_retire_ret_pay.png)](/assets/military_retire_ret_pay.png)|[![](/assets/military_retire_side.png)](/assets/military_retire_side.png)
+<div class="screen-shots">
+	<div class="screen-shot">
+		<a href="/assets/military_retire_main.png"><img src="/assets/military_retire_main.png" alt=""></a>
+	</div>
+	<div class="screen-shot">
+		<a href="/assets/military_retire_ret_pay.png"><img src="/assets/military_retire_ret_pay.png" alt=""></a>
+	</div>
+	<div class="screen-shot">
+		<a href="/assets/military_retire_side.png"><img src="/assets/military_retire_side.png" alt=""></a>
+  </div>
+</div>

@@ -52,7 +52,8 @@
         text-align: left;
         display: inline-block;
         padding-top: $spacing-unit;
-        
+        flex: 1 1 50%;
+
         ul {
             display: block;
             margin: 0;
@@ -62,7 +63,8 @@
     }
 
     div.row {
-        display: inline-block;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     figure > img {
@@ -71,6 +73,16 @@
 
     figcaption {
         font-size: $small-font-size;
+    }
+
+    .screen-shots {
+        display: flex;
+        justify-content: flex-start;
+        overflow-y: auto;
+
+        .screen-shot {
+            margin: 5px;
+        }
     }
 
 /* Lists
@@ -174,6 +186,14 @@
             padding-right: $spacing-unit / 2;
             padding-left: $spacing-unit / 2;
         }
+
+        @media only screen and (max-width: 1024px) {
+            max-width: 85%;
+        }
+
+        @media only screen and (max-width: 768px) {
+            max-width: 100%;
+        }
     }
 
 /* Clear Fix
@@ -200,7 +220,7 @@
     }
 
     :not(.highlight)>table tr {
-        background-color: #fff;
+        background-color: transparent;
         border-top: 0px solid #ccc
     }
 
