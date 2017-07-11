@@ -35,27 +35,53 @@
         vertical-align: middle;
     }
 
+    .app-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 5px;
+
+        .download-links {
+            display: flex;
+            align-items: center;
+
+            .link {
+                margin-right: 10px;
+            }
+
+            .apple-link {
+                height: 40px;
+            }
+
+            .android-link {
+                img {
+                    height: 60px;
+                }
+            }
+        }
+    }
+
     .app-hero {
         display: flex;
         flex-wrap: wrap;
-    }
 
-    .app-icon {
-        flex: 0 0 auto;
-        background-image: url("/assets/military_retire_icon.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center center;
-        width: 192px;
-        height: 192px;
-        margin-right: 20px;
-        margin-bottom: 20px;
-    }
-    
-    .app-description {
-        flex: 1 1 0px;
-        text-align: left;
-        margin-bottom: 20px;
+        .app-icon {
+            flex: 0 0 auto;
+            background-image: url("/assets/military_retire_icon.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center center;
+            width: 192px;
+            height: 192px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+
+        .app-description {
+            flex: 1 1 0px;
+            text-align: left;
+            margin-bottom: 20px;
+        }
     }
 
     .app-features {
@@ -68,24 +94,38 @@
 
     .screen-shot-container {
         margin-top: 20px;
-    }
 
-    .screen-shots {
-        display: flex;
-        justify-content: flex-start;
-        overflow-y: auto;
+        .screen-shots {
+            display: flex;
+            justify-content: flex-start;
+            overflow-y: auto;
 
-        .screen-shot {
-            margin: 5px;
+            .screen-shot {
+                margin: 5px;
+            }
         }
     }
 
-    @media only screen and (max-width: 500px) { 
-        .app-name {
-            text-align: center;
+    @media only screen and (max-width: 500px) {
+        .app-header {
+            flex-direction: column;
+            justify-content: center;
+
+            .download-links {
+                justify-content: center;
+
+                .link {
+                    margin: 0;
+                }
+            }
         }
-        .app-icon {
-            width: 100%;
+
+        .app-hero {
+            .app-icon {
+                width: 100%;
+                margin: 0;
+                margin-bottom: 10px;
+            }
         }
     }
 
@@ -249,21 +289,21 @@
 
 /* Inputs/Textarea
  * =============================================== */
- 
+
     input:not([type="submit"]), textarea {
         font-family: $base-font-family;
         font-size: $base-font-size;
         line-height: $base-line-height;
         display: block;
     }
-    
+
     input[type="submit"] {
         font-family: $base-font-family;
         font-size: $base-font-size;
         line-height: $base-line-height;
         display: block;
     }
-    
+
 /* Buttons
  * =============================================== */
     /* From http://designmodo.github.io/Flat-UI/ */
@@ -281,7 +321,7 @@
         color: #ffffff !important;
         text-decoration: none;
     }
-    
+
     .btn:hover,
     .btn:focus {
         color: #ffffff;
@@ -289,19 +329,19 @@
         text-decoration: none;
         cursor: pointer;
     }
-    
+
     .btn:active,
     .btn.active {
         outline: none;
         -webkit-box-shadow: none;
         box-shadow: none;
     }
-    
+
     .btn:disabled {
         background-color: lighten($grey-color, 20%);
         cursor: default;
     }
-    
+
     .btn-lg {
         padding: 10px 19px;
         font-size: 17px;
