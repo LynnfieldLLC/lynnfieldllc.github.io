@@ -46,11 +46,6 @@ layout: default
     </ul>
 </div>
 
-<div class="va-claims-insider">
-<h4>VA Disability Rating Partner</h4>
-Maximize your VA Disability rating by visiting the experts at <a href="http://www.vaclaimsinsiderelite.com">VA Claims Insider</a>
-</div>
-
 <div class="screen-shot-container">
     <h4>Screen Shots</h4>
     <div class="screen-shots">
