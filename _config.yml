@@ -1,6 +1,6 @@
 # Site settings
 title: Lynnfield LLC
-email: 
+email:
 description: > # this means to ignore newlines until "baseurl:"
   Jekyll Theme Demo
 baseurl: "" # the subpath of your site, e.g. /blog/
@@ -13,3 +13,5 @@ markdown_ext:  markdown,mkdown,mkdn,mkd,md
 
 redcarpet:
   extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "fenced_code_blocks"]
+
+host: 0.0.0.0
