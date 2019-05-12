@@ -10,7 +10,7 @@ layout: default
         </div>
         <div class="link android-link">
             <a href='https://play.google.com/store/apps/details?id=com.LynnfieldLLC.MilitaryRetire'>
-                <img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/>
+                <img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' draggable="false" />
             </a>
         </div>
     </div>
@@ -55,24 +55,36 @@ Maximize your VA Disability rating by visiting the experts at <a href="https://v
     <h4>Screen Shots</h4>
     <div class="screen-shots">
         <div class="screen-shot">
-            <a href="/assets/ios_military_retire_main.png"><img src="/assets/ios_military_retire_main.png" alt=""></a>
+            <a href="/assets/ios_military_retire_main.png" draggable="false">
+                <img src="/assets/ios_military_retire_main.png" alt="" draggable="false"/>
+            </a>
         </div>
         <div class="screen-shot">
-            <a href="/assets/ios_military_retire_ret_pay.png"><img src="/assets/ios_military_retire_ret_pay.png" alt=""></a>
+            <a href="/assets/ios_military_retire_ret_pay.png" draggable="false">
+                <img src="/assets/ios_military_retire_ret_pay.png" alt="" draggable="false" />
+            </a>
         </div>
         <div class="screen-shot">
-            <a href="/assets/ios_military_retire_side.png"><img src="/assets/ios_military_retire_side.png" alt=""></a>
+            <a href="/assets/ios_military_retire_side.png" draggable="false">
+                <img src="/assets/ios_military_retire_side.png" alt="" draggable="false" />
+            </a>
         </div>
     </div>
     <div class="screen-shots">
         <div class="screen-shot">
-            <a href="/assets/android_military_retire_main.png"><img src="/assets/android_military_retire_main.png" alt=""></a>
+            <a href="/assets/android_military_retire_main.png" draggable="false">
+                <img src="/assets/android_military_retire_main.png" alt="" draggable="false" />
+            </a>
         </div>
         <div class="screen-shot">
-            <a href="/assets/android_military_retire_ret_pay.png"><img src="/assets/android_military_retire_ret_pay.png" alt=""></a>
+            <a href="/assets/android_military_retire_ret_pay.png" draggable="false">
+                <img src="/assets/android_military_retire_ret_pay.png" alt="" draggable="false" />
+            </a>
         </div>
         <div class="screen-shot">
-            <a href="/assets/android_military_retire_side.png"><img src="/assets/android_military_retire_side.png" alt=""></a>
+            <a href="/assets/android_military_retire_side.png" draggable="false">
+                <img src="/assets/android_military_retire_side.png" alt="" draggable="false" />
+            </a>
         </div>
     </div>
 </div>
