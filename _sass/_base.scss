@@ -30,6 +30,25 @@
 
 /* Images and Figures
  * ============================================== */
+    .app-summary {
+        display: block;
+        cursor: pointer;
+
+        .app-summary-header {
+            font-size: 1.9em;
+            font-weight: bold;
+            color: rgb(69,69,69);
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+            height: 60px;
+        }
+
+        .app-summary-description {
+            color: rgb(69,69,69);
+        }
+    }
+
     img {
         max-width: 100%;
         vertical-align: middle;
@@ -44,6 +63,7 @@
         .download-links {
             display: flex;
             align-items: center;
+            height: 60px;
 
             .link {
                 margin-right: 10px;
@@ -67,7 +87,6 @@
 
         .app-icon {
             flex: 0 0 auto;
-            background-image: url("/assets/military_retire_icon.png");
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center center;
@@ -75,6 +94,14 @@
             height: 192px;
             margin-right: 20px;
             margin-bottom: 20px;
+        }
+
+        .app-icon-military-retire {
+            background-image: url("/assets/military_retire_icon.png");
+        }
+
+        .app-icon-va-disability {
+            background-image: url("/assets/va_disability_icon.png");
         }
 
         .app-description {
