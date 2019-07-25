@@ -20,5 +20,10 @@
   <link rel="manifest" href="/site.webmanifest">
   <meta name="theme-color" content="#413dd2">
 
+  {% if page.url contains 'military-retire-app' %}
   <meta name="apple-itunes-app" content="app-id=563082328">
+  {% endif %}
+  {% if page.url contains 'va-disability-pay-app' %}
+  <meta name="apple-itunes-app" content="app-id=1470561883">
+  {% endif %}
 </head>
