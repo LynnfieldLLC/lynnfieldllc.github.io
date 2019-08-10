@@ -33,6 +33,14 @@
     .app-summary {
         display: block;
         cursor: pointer;
+        padding: 8px 8px 0 8px;
+        margin-left: -8px;
+        margin-top: -8px;
+        border-radius: 12px;
+
+        &:hover {
+            box-shadow: 0 3.2px 7.2px 0 rgba(0,0,0,.132), 0 .6px 1.8px 0 rgba(0,0,0,.108);
+        }
 
         .app-summary-header {
             font-size: 1.9em;
@@ -121,6 +129,7 @@
 
     .va-claims-insider {
         margin-bottom: 20px;
+        padding-left: 20px;
     }
 
     .screen-shot-container {

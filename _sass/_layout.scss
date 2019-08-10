@@ -69,10 +69,10 @@
             &:not(:first-child) {
                 margin-left: 20px;
             }
-        }
 
-        .page-link:hover {
-            opacity: 0.8;
+            &:hover {
+                opacity: 0.7;
+            }
         }
 
         @include media-query($on-palm) {
