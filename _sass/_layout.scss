@@ -54,8 +54,12 @@
 
     .site-nav {
         float: right;
-        line-height: 56px;
-        margin-right: 25px;
+        height: 58px;
+        margin-right: 35px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-end;
 
         .page-link {
             line-height: $base-line-height;
