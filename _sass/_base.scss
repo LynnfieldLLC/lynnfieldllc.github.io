@@ -1,390 +1,381 @@
-/* Reset Basic Elements
- * ============================================== */
-    body, h1, h2, h3, h4, h5, h6,
-    p, blockquote, pre, hr,
-    dl, dd, ol, ul, figure {
-        margin: 0;
-        padding: 0;
+// Reset Basic Elements
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+// Basic Styling
+body {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    font-weight: 300;
+    color: $text-color;
+    background-color: $background-color;
+    -webkit-text-size-adjust: 100%;
+}
+
+// Set Margin Bottom for Vertical Rhythm
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}
+
+// My custom stuff
+
+// Home Page
+.app-summary {
+    display: block;
+    cursor: pointer;
+    padding: 8px 8px 0 8px;
+    margin-left: -8px;
+    margin-top: -8px;
+    border-radius: 12px;
+
+    &:not(:hover) {
+        color: rgb(69,69,69);
     }
 
-/* Basic Styling
- * ============================================== */
-    body {
-        font-family: $base-font-family;
-        font-size: $base-font-size;
-        line-height: $base-line-height;
-        font-weight: 300;
-        color: $text-color;
-        background-color: $background-color;
-        -webkit-text-size-adjust: 100%;
+    &:hover .app-hero {
+        opacity: 0.9;
     }
 
-/* Set Margin Bottom for Vertical Rhythm
- * ============================================== */
-    h1, h2, h3, h4, h5, h6,
-    p, blockquote, pre,
-    ul, ol, dl, figure,
-    %vertical-rhythm {
-        margin-bottom: $spacing-unit / 2;
-    }
-
-/* Images and Figures
- * ============================================== */
-    .app-summary {
-        display: block;
-        cursor: pointer;
-        padding: 8px 8px 0 8px;
-        margin-left: -8px;
-        margin-top: -8px;
-        border-radius: 12px;
-
-        &:hover {
-            box-shadow: 0 3.2px 7.2px 0 rgba(0,0,0,.132), 0 .6px 1.8px 0 rgba(0,0,0,.108);
-        }
-
-        .app-summary-header {
-            font-size: 1.9em;
-            font-weight: bold;
-            color: rgb(69,69,69);
-            display: flex;
-            align-items: center;
-            margin-bottom: 5px;
-            height: 60px;
-        }
-
-        .app-summary-description {
-            color: rgb(69,69,69);
-        }
-    }
-
-    img {
-        max-width: 100%;
-        vertical-align: middle;
-    }
-
-    .app-header {
+    .app-summary-header {
+        font-size: 1.9em;
+        font-weight: bold;
+        // color: rgb(69,69,69);
         display: flex;
         align-items: center;
-        justify-content: space-between;
         margin-bottom: 5px;
+        height: 60px;
+    }
+
+    .app-summary-description {
+        color: rgb(69,69,69);
+    }
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+// Individual pages
+.app-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+
+    .download-links {
+        display: flex;
+        align-items: center;
+        height: 60px;
+
+        .link {
+            margin-right: 10px;
+        }
+
+        .apple-link {
+            height: 40px;
+        }
+
+        .android-link {
+            img {
+                height: 60px;
+            }
+        }
+    }
+}
+
+// Shared
+.app-hero {
+    display: flex;
+    flex-wrap: wrap;
+
+    .app-icon {
+        flex: 0 0 auto;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        width: 192px;
+        height: 192px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .app-icon-military-retire {
+        background-image: url("/assets/military_retire_icon.png");
+    }
+
+    .app-icon-va-disability {
+        background-image: url("/assets/va_disability_icon.png");
+    }
+
+    .app-description {
+        flex: 1 1 0px;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+}
+
+.app-features {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.va-claims-insider {
+    margin-bottom: 20px;
+}
+
+.screen-shot-container {
+    margin-top: 20px;
+
+    .screen-shots {
+        display: flex;
+        justify-content: flex-start;
+        overflow-y: auto;
+
+        .screen-shot {
+            margin: 5px;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .app-header {
+        flex-direction: column;
+        justify-content: center;
 
         .download-links {
-            display: flex;
-            align-items: center;
-            height: 60px;
+            justify-content: center;
 
             .link {
-                margin-right: 10px;
-            }
-
-            .apple-link {
-                height: 40px;
-            }
-
-            .android-link {
-                img {
-                    height: 60px;
-                }
+                margin: 0;
             }
         }
     }
 
     .app-hero {
-        display: flex;
-        flex-wrap: wrap;
-
         .app-icon {
-            flex: 0 0 auto;
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: center center;
-            width: 192px;
-            height: 192px;
-            margin-right: 20px;
-            margin-bottom: 20px;
-        }
-
-        .app-icon-military-retire {
-            background-image: url("/assets/military_retire_icon.png");
-        }
-
-        .app-icon-va-disability {
-            background-image: url("/assets/va_disability_icon.png");
-        }
-
-        .app-description {
-            flex: 1 1 0px;
-            text-align: left;
-            margin-bottom: 20px;
+            width: 100%;
+            margin: 0;
+            margin-bottom: 10px;
         }
     }
+}
 
-    .app-features {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        text-align: left;
-        margin-bottom: 20px;
+// Lists
+ul, ol {
+    margin-left: $spacing-unit;
+}
+
+li {
+    > ul,
+    > ol {
+            margin-bottom: 0;
     }
+}
 
-    .va-claims-insider {
-        margin-bottom: 20px;
-        padding-left: 20px;
-    }
+// Headers
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin: 0px;
+}
 
-    .screen-shot-container {
-        margin-top: 20px;
-
-        .screen-shots {
-            display: flex;
-            justify-content: flex-start;
-            overflow-y: auto;
-
-            .screen-shot {
-                margin: 5px;
-            }
-        }
-    }
+h1 {
+    font-size: 1.9em !important;
 
     @media only screen and (max-width: 500px) {
-        .app-header {
-            flex-direction: column;
-            justify-content: center;
-
-            .download-links {
-                justify-content: center;
-
-                .link {
-                    margin: 0;
-                }
-            }
-        }
-
-        .app-hero {
-            .app-icon {
-                width: 100%;
-                margin: 0;
-                margin-bottom: 10px;
-            }
-        }
+        font-size: 1.75em !important;
     }
-
-/* Lists
- * ============================================== */
-    ul, ol {
-        margin-left: $spacing-unit;
-    }
-
-    li {
-        > ul,
-        > ol {
-             margin-bottom: 0;
-        }
-    }
-
-/* Headers
- * ============================================== */
-    h1, h2, h3, h4, h5, h6 {
-        font-weight: bold;
-        margin: 0px;
-    }
-
-    h1 {
-        font-size: 1.9em !important;
-
-        @media only screen and (max-width: 500px) {
-            font-size: 1.75em !important;
-        }
-    }
-    h2 {font-size: 1.5em !important;}
-    h3 {font-size: 1.3em;}
-    h4 {font-size: 1em;}
-    h5 {font-size: .9em;}
-    h6 {font-size: .8em;}
+}
+h2 {font-size: 1.5em !important;}
+h3 {font-size: 1.3em;}
+h4 {font-size: 1em;}
+h5 {font-size: .9em;}
+h6 {font-size: .8em;}
 
 
-/* Links
- * ============================================== */
-    a {
+// Links
+a {
+    color: $brand-color;
+    text-decoration: none;
+
+    &:hover {
         color: darken($brand-color, 10%);
         text-decoration: none;
-
-        &:hover {
-            color: darken($brand-color, 20%);
-            text-decoration: none;
-        }
     }
+}
 
-/* Block Quotes
- * ============================================== */
-    blockquote {
-        color: #BBB;
-        border-left: 4px solid $brand-color;
-        padding-left: $spacing-unit / 2;
-        font-size: 17px;
-        letter-spacing: -1px;
-        font-style: italic;
+// Block Quotes
+blockquote {
+    color: #BBB;
+    border-left: 4px solid $brand-color;
+    padding-left: $spacing-unit / 2;
+    font-size: 17px;
+    letter-spacing: -1px;
+    font-style: italic;
 
-        > :last-child {
-            margin-bottom: 0;
-        }
+    > :last-child {
+        margin-bottom: 0;
     }
+}
 
-/* Code Blocks
- * ============================================== */
-    pre,
-    code {
-        font-size: 13px;
-        border: 1px solid $grey-color-light;
-        font-family: Menlo, Monaco, "Andale Mono", serif;
-    }
+// Code Blocks
+pre,
+code {
+    font-size: 13px;
+    border: 1px solid $grey-color-light;
+    font-family: Menlo, Monaco, "Andale Mono", serif;
+}
 
-    code {
-        padding: 1px 3px;
-        background-color: #FFF;
-        border-radius: 5px;
-    }
+code {
+    padding: 1px 3px;
+    background-color: #FFF;
+    border-radius: 5px;
+}
 
-    pre {
-        border-radius: 3px;
-        padding: 8px 12px;
-        overflow-x: scroll;
+pre {
+    border-radius: 3px;
+    padding: 8px 12px;
+    overflow-x: scroll;
+    background-color: #F5F5F5;
+
+    > code {
         background-color: #F5F5F5;
+        border: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
 
-        > code {
-            background-color: #F5F5F5;
-            border: 0;
-            padding-right: 0;
-            padding-left: 0;
-        }
+// Wrapper
+.wrapper {
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
+    @extend %clearfix;
+
+    @include media-query($on-laptop) {
+        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+        padding-right: $spacing-unit / 2;
+        padding-left: $spacing-unit / 2;
     }
 
-/* Wrapper
- * ============================================== */
-    .wrapper {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-        margin-right: auto;
-        margin-left: auto;
-        padding-right: $spacing-unit;
-        padding-left: $spacing-unit;
-        @extend %clearfix;
-
-        @include media-query($on-laptop) {
-            max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-            max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-            padding-right: $spacing-unit / 2;
-            padding-left: $spacing-unit / 2;
-        }
-
-        @media only screen and (max-width: 1024px) {
-            max-width: 85%;
-        }
-
-        @media only screen and (max-width: 768px) {
-            max-width: 100%;
-        }
+    @media only screen and (max-width: 1024px) {
+        max-width: 85%;
     }
 
-/* Clear Fix
- * ============================================== */
-    %clearfix {
-
-        &:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
+    @media only screen and (max-width: 768px) {
+        max-width: 100%;
     }
+}
 
-/* TABLES
- * =============================================== */
-    table {
-        border-collapse: collapse;
-        border-spacing: 0;
-        height: 100%;
+// Clear Fix
+%clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
     }
+}
 
-    :not(.highlight)>table {
-    margin: 0 auto 1.5em auto
-    }
+// TABLES
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    height: 100%;
+}
 
-    :not(.highlight)>table tr {
-        background-color: transparent;
-        border-top: 0px solid #ccc
-    }
+:not(.highlight)>table {
+margin: 0 auto 1.5em auto
+}
 
-    :not(.highlight)>table tr th, :not(.highlight)>table tr td {
-        padding: 5px;
-        border: 0px solid #ddd
-    }
+:not(.highlight)>table tr {
+    background-color: transparent;
+    border-top: 0px solid #ccc
+}
 
-    :not(.highlight)>table tr th {
-        font-weight: bold
-    }
+:not(.highlight)>table tr th, :not(.highlight)>table tr td {
+    padding: 5px;
+    border: 0px solid #ddd
+}
 
-    :not(.highlight)>table tr:nth-child(2n) {
-        background-color: #f8f8f8
-    }
+:not(.highlight)>table tr th {
+    font-weight: bold
+}
 
-/* Inputs/Textarea
- * =============================================== */
+:not(.highlight)>table tr:nth-child(2n) {
+    background-color: #f8f8f8
+}
 
-    input:not([type="submit"]), textarea {
-        font-family: $base-font-family;
-        font-size: $base-font-size;
-        line-height: $base-line-height;
-        display: block;
-    }
+// Inputs/Textarea
+input:not([type="submit"]), textarea {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    display: block;
+}
 
-    input[type="submit"] {
-        font-family: $base-font-family;
-        font-size: $base-font-size;
-        line-height: $base-line-height;
-        display: block;
-    }
+input[type="submit"] {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    display: block;
+}
 
-/* Buttons
- * =============================================== */
-    /* From http://designmodo.github.io/Flat-UI/ */
-    .btn {
-        border: none;
-        font-size: 15px;
-        font-weight: normal;
-        line-height: 1.4;
-        border-radius: 4px;
-        padding: 10px 15px;
-        -webkit-font-smoothing: subpixel-antialiased;
-        -webkit-transition: 0.25s linear;
-        transition: 0.25s linear;
-        background-color: $brand-color;
-        color: #ffffff !important;
-        text-decoration: none;
-    }
+// Buttons
+// From http://designmodo.github.io/Flat-UI/
+.btn {
+    border: none;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.4;
+    border-radius: 4px;
+    padding: 10px 15px;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-transition: 0.25s linear;
+    transition: 0.25s linear;
+    background-color: $brand-color;
+    color: #ffffff !important;
+    text-decoration: none;
+}
 
-    .btn:hover,
-    .btn:focus {
-        color: #ffffff;
-        background-color: darken($brand-color, 10%);
-        text-decoration: none;
-        cursor: pointer;
-    }
+.btn:hover,
+.btn:focus {
+    color: #ffffff;
+    background-color: darken($brand-color, 10%);
+    text-decoration: none;
+    cursor: pointer;
+}
 
-    .btn:active,
-    .btn.active {
-        outline: none;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-    }
+.btn:active,
+.btn.active {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
 
-    .btn:disabled {
-        background-color: lighten($grey-color, 20%);
-        cursor: default;
-    }
+.btn:disabled {
+    background-color: lighten($grey-color, 20%);
+    cursor: default;
+}
 
-    .btn-lg {
-        padding: 10px 19px;
-        font-size: 17px;
-        line-height: 1.471;
-        border-radius: 6px;
-    }
+.btn-lg {
+    padding: 10px 19px;
+    font-size: 17px;
+    line-height: 1.471;
+    border-radius: 6px;
+}
