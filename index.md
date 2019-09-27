@@ -25,14 +25,3 @@ layout: default
         </span>
     </span>
 </a>
-
-<a class="app-summary" href="https://vaclaimsinsider.clickfunnels.com/veteran-intake-data28102639" target="_blank">
-    <span class="app-summary-header">
-        VA Disability Rating Partner
-    </span>
-    <span class="app-hero">
-        <span class="app-description app-summary-description">
-            Maximize your VA Disability rating by visiting the experts at VA Claims Insider
-        </span>
-    </span>
-</a>
