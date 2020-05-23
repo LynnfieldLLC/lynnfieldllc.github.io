@@ -85,9 +85,24 @@
 .footer {
     padding-bottom: 3em;
     margin: auto;
-    font-size: 12px;
+    font-size: 16px;
     font-family: Open Sans;
-    color: #959595;
+    color: #606060;
+
+    .links {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin: 6px;
+
+        .separator {
+            margin: 0px 8px;
+        }
+    }
+
+    .minor {
+        font-size: 12px;
+    }
 }
 
 // Individual Posts
