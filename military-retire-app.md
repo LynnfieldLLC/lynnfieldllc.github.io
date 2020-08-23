@@ -60,8 +60,8 @@ layout: default
             </a>
         </div>
         <div class="screen-shot">
-            <a href="/assets/ios_military_retire_side.png" draggable="false">
-                <img src="/assets/ios_military_retire_side.png" alt="" draggable="false" />
+            <a href="/assets/ios_military_retire_list.png" draggable="false">
+                <img src="/assets/ios_military_retire_list.png" alt="" draggable="false" />
             </a>
         </div>
     </div>
