@@ -37,21 +37,4 @@ layout: default
             </a>
         </div>
     </div>
-    <!-- <div class="screen-shots">
-        <div class="screen-shot">
-            <a href="/assets/android_military_retire_main.png" draggable="false">
-                <img src="/assets/android_military_retire_main.png" alt="" draggable="false" />
-            </a>
-        </div>
-        <div class="screen-shot">
-            <a href="/assets/android_military_retire_ret_pay.png" draggable="false">
-                <img src="/assets/android_military_retire_ret_pay.png" alt="" draggable="false" />
-            </a>
-        </div>
-        <div class="screen-shot">
-            <a href="/assets/android_military_retire_side.png" draggable="false">
-                <img src="/assets/android_military_retire_side.png" alt="" draggable="false" />
-            </a>
-        </div>
-    </div> -->
 </div>
