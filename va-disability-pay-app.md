@@ -6,7 +6,9 @@ layout: default
     <h1 class="app-name">VA Disability Pay</h1>
     <div class="download-links">
         <div class="link apple-link">
-            <a href="https://itunes.apple.com/us/app/military-retirement/id1470561883?mt=8" style="display:inline-block;overflow:hidden;background:url(//linkmaker.itunes.apple.com/assets/shared/badges/en-us/appstore-lrg.svg) no-repeat;width:135px;height:40px;background-size:contain;"></a>
+            <a href="https://apps.apple.com/us/app/va-disability-pay/id1470561883?itsct=apps_box_badge&amp;itscg=30200">
+                <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1564704000&h=9df428e7c9042df1da65c9112307535e" alt="Download on the App Store">
+            </a>
         </div>
     </div>
 </div>

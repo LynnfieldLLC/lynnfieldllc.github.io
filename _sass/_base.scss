@@ -81,7 +81,9 @@ img {
         }
 
         .apple-link {
-            height: 40px;
+            img {
+                height: 40px;
+            }
         }
 
         .android-link {
