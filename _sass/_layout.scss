@@ -70,8 +70,8 @@
         font-weight: bold;
         letter-spacing: 0.05em;
 
-        &:not(:first-child) {
-            margin-left: 20px;
+        &:not(:last-child) {
+            margin-right: 20px;
         }
 
         &:hover {
