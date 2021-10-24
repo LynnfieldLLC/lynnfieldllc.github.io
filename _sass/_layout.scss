@@ -35,7 +35,7 @@
     }
 
     @media only screen and (max-width: 500px) {
-        font-size: 2.25em !important;
+        font-size: 1.75em !important;
     }
 }
 
@@ -43,7 +43,7 @@
     border: 10px solid #FFF;
     padding: 0.3em 0.5em;
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     display: inline-block;
 
     @include media-query($on-palm) {
@@ -53,13 +53,17 @@
 }
 
 .site-nav {
-    float: right;
-    height: 58px;
-    margin-right: 35px;
+    background-color: $brand-color;
+    min-height: 58px;
+    padding-left: 35px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: flex-start;
+
+    @media only screen and (max-width: 500px) {
+        padding-left: 10px !important;
+    }
 
     .page-link {
         line-height: $base-line-height;
@@ -73,10 +77,6 @@
         &:hover {
             opacity: 0.7;
         }
-    }
-
-    @include media-query($on-palm) {
-        padding-bottom: 10px;
     }
 }
 
