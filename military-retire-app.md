@@ -49,7 +49,6 @@ layout: default
 </div>
 
 <div class="screen-shot-container">
-    <h4>Screen Shots</h4>
     <div class="screen-shots">
         <div class="screen-shot">
             <a href="/assets/ios_military_retire_main.png" draggable="false">
