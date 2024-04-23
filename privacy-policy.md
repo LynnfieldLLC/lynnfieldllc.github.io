@@ -6,23 +6,22 @@ permalink: /privacy-policy/
 
 This policy applies all information collected or submitted on websites and applications published by Lynnfield LLC, including Military Retirement and VA Disability Pay, on all devices and platforms.
 
-## Information we collect
+## Information Collection and Usage
 
-There are no accounts needed to operate any of our apps. We do not collect any personally identifiable information. The information you enter on your device cannot be traced back to you.
+The information collected will vary slightly depending on the app/platform being used.
 
-Our website does not collect any information.
-
-## Information Usage
+### Military Retirement (iOS and Android)
+Military Retirement mobile applications for both iOS and Android do not collect any information or usage data of any kind.
 
 All information you enter stays on the device wherein you entered the information. We do not have any access to this data; therefore, cannot use this information in any way.
 
-## Security
+### VA Disability Pay (iOS)
+VA Disability Pay uses TelemetryDeck to collect anonymized usage data. This data does not contain any user-inputted data or information. This data helps us understand how our users are using our app and how we can improve it. TelemetryDeck does not collect any personally identifiable information. You can learn more by reading [TelemetryDeck’s privacy policy](https://telemetrydeck.com/privacy) directly.
 
-Our applications do not communicate with any website, keeping your data safe and secure.
+All information you enter stays on the device wherein you entered the information. We do not have any access to this data; therefore, cannot use this information in any way.
 
-## Accessing, changing, or deleting information
-
-We do not have access to any information you enter in the app and do not send this data to any third party or service. Deleting the app from your device will remove all data you have entered.
+### Website
+The Lynnfield LLC website does not collect any information or usage data of any kind, nor does it allow any data to be entered.
 
 ## Third-party links and content
 
@@ -47,4 +46,5 @@ If you have any questions regarding this privacy policy, you may email [support@
 ## Changes to this policy
 
 If we decide to change our privacy policy, we will post those changes on this page. Summary of changes so far:
-- **May 20, 2020**: First published
+- **May 2020**: First published
+- **April 2024**: Updates to include TelemetryDeck usage for VA Disability Pay mobile app, along with other slight organizational changes
