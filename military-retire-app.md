@@ -17,9 +17,8 @@ layout: default
         </div>
     </div>
 </div>
-<div class="app-hero">
-    <div class="app-icon app-icon-military-retire"></div>
-
+<div class="app-info">
+    <img class="app-icon" src="/assets/military_retire_icon.png" alt="" draggable="false" />
     <div class="app-description">
         Military Retirement is an application intended to assist military personnel from all branches of military service by informing them of their benefits upon retirement from military service. Military Retirement gives assistance by calculating an estimation of retirement pay based on your personal information. Military Retirement incorporates four years of pay tables to provide the highest degree of accuracy. Compare multiple scenarios to determine which retirement option is best for you.
     </div>
@@ -49,21 +48,7 @@ layout: default
 </div>
 
 <div class="screen-shot-container">
-    <div class="screen-shots">
-        <div class="screen-shot">
-            <a href="/assets/ios_military_retire_main.png" draggable="false">
-                <img src="/assets/ios_military_retire_main.png" alt="" draggable="false"/>
-            </a>
-        </div>
-        <div class="screen-shot">
-            <a href="/assets/ios_military_retire_ret_pay.png" draggable="false">
-                <img src="/assets/ios_military_retire_ret_pay.png" alt="" draggable="false" />
-            </a>
-        </div>
-        <div class="screen-shot">
-            <a href="/assets/ios_military_retire_list.png" draggable="false">
-                <img src="/assets/ios_military_retire_list.png" alt="" draggable="false" />
-            </a>
-        </div>
-    </div>
+    <a href="/assets/military_retire_screenshots.png" draggable="false">
+        <img src="/assets/military_retire_screenshots.png" alt="" draggable="false" />
+    </a>
 </div>

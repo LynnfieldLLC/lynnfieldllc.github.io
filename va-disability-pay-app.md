@@ -12,30 +12,15 @@ layout: default
         </div>
     </div>
 </div>
-<div class="app-hero">
-    <div class="app-icon app-icon-va-disability"></div>
-
+<div class="app-info">
+    <img class="app-icon" src="/assets/va_disability_icon.png" alt="" draggable="false" />
     <div class="app-description">
         VA Disability Pay is an application intended to assist military personnel from all branches of the military service by informing them of their disability benefits. VA Disability Pay gives assistance by calculating an estimation of Veterans Affairs (VA) disability pay. It also calculates an overall disability rating based on your combined individual disability ratings.
     </div>
 </div>
 
 <div class="screen-shot-container">
-    <div class="screen-shots">
-        <div class="screen-shot">
-            <a href="/assets/ios_va_disability_main.png" draggable="false">
-                <img src="/assets/ios_va_disability_main.png" alt="" draggable="false"/>
-            </a>
-        </div>
-        <div class="screen-shot">
-            <a href="/assets/ios_va_disability_rating.png" draggable="false">
-                <img src="/assets/ios_va_disability_rating.png" alt="" draggable="false" />
-            </a>
-        </div>
-        <div class="screen-shot">
-            <a href="/assets/ios_va_disability_pay.png" draggable="false">
-                <img src="/assets/ios_va_disability_pay.png" alt="" draggable="false" />
-            </a>
-        </div>
-    </div>
+    <a href="/assets/va_disability_screenshots.png" draggable="false">
+        <img src="/assets/va_disability_screenshots.png" alt="" draggable="false" />
+    </a>
 </div>
