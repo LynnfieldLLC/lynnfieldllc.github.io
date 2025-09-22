@@ -1,3 +1,6 @@
 {
-    "showTrajectorDisabilityAd": true
+    "trajectorAdInfo": {
+        "shouldShow": false,
+        "url": "https://www.trajectordisability.com"
+    }
 }
