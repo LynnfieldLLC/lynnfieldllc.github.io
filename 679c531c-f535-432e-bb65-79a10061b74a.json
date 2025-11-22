@@ -2,5 +2,9 @@
     "trajectorAdInfo": {
         "shouldShow": true,
         "url": "https://www.trajectormedical.com/go/vaCalcLapp"
+    },
+    "trajectorAdInfoMR": {
+        "shouldShow": false,
+        "url": "https://www.trajectormedical.com/go/vaCalcLapp"
     }
 }
