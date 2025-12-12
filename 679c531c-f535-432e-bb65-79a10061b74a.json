@@ -4,7 +4,7 @@
         "url": "https://www.trajectormedical.com/go/vaCalcLapp"
     },
     "trajectorAdInfoMR": {
-        "shouldShow": true,
+        "shouldShow": false,
         "url": "https://www.trajectormedical.com/go/vaCalcLapp"
     }
 }
