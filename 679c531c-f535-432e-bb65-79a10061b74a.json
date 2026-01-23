@@ -1,10 +1,16 @@
 {
     "trajectorAdInfo": {
         "shouldShow": true,
-        "url": "https://www.trajectormedical.com/go/vaCalcLapp"
+        "url": "https://www.trajectormedical.com/go/vaCalcLapp",
+        "titleText": "Leaving Thousands on the Table?",
+        "subtitleText": "Incomplete evidence can lead to incomplete ratings.",
+        "footerText": "Take control today."
     },
     "trajectorAdInfoMR": {
         "shouldShow": true,
-        "url": "https://www.trajectormedical.com/go/vaCalcLapp"
+        "url": "https://www.trajectormedical.com/go/vaCalcLapp",
+        "titleText": "Leaving Thousands on the Table?",
+        "subtitleText": "Incomplete evidence can lead to incomplete ratings.",
+        "footerText": "Take control today."
     }
 }
