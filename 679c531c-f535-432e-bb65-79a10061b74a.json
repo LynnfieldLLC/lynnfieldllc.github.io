@@ -2,15 +2,15 @@
     "trajectorAdInfo": {
         "shouldShow": true,
         "url": "https://www.trajectormedical.com/go/vaCalcLapp",
-        "titleText": "Leaving Thousands on the Table?",
-        "subtitleText": "Incomplete evidence can lead to incomplete ratings.",
-        "footerText": "Take control today."
+        "titleText": "Low Disability Rating?",
+        "subtitleText": "The VA may not be getting the whole picture.",
+        "footerText": "Talk to an expert"
     },
     "trajectorAdInfoMR": {
         "shouldShow": true,
         "url": "https://www.trajectormedical.com/go/vaCalcLapp",
-        "titleText": "Leaving Thousands on the Table?",
-        "subtitleText": "Incomplete evidence can lead to incomplete ratings.",
-        "footerText": "Take control today."
+        "titleText": "\"Is My Rating Right?\"",
+        "subtitleText": "",
+        "footerText": "Learn more about this overlooked part of the VA benefits journey"
     }
 }
