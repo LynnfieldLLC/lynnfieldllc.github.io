@@ -2,9 +2,9 @@
     "trajectorAdInfo": {
         "shouldShow": true,
         "url": "https://www.trajectormedical.com/go/vaCalcLapp",
-        "titleText": "Denied by the VA?",
-        "subtitleText": "You may be missing key medical evidence.",
-        "footerText": "Talk to an expert"
+        "titleText": "Denied VA Disability Benefits?",
+        "subtitleText": "Work with professionals who care.",
+        "footerText": "Start today"
     },
     "trajectorAdInfoMR": {
         "shouldShow": true,
