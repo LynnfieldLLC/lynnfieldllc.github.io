@@ -15,7 +15,7 @@ Military Retirement app uses TelemetryDeck to collect anonymized usage data. Thi
 
 All information you enter stays on the device wherein you entered the information. We do not have any access to this data; therefore, cannot use this information in any way.
 
-### VA Disability Pay (iOS)
+### VA Disability Pay
 VA Disability Pay uses TelemetryDeck to collect anonymized usage data. This data does not contain any user-inputted data or information. This data helps us understand how our users are using our app and how we can improve it. TelemetryDeck does not collect any personally identifiable information. You can learn more by reading [TelemetryDeck’s privacy policy](https://telemetrydeck.com/privacy) directly.
 
 All information you enter stays on the device wherein you entered the information. We do not have any access to this data; therefore, cannot use this information in any way.
@@ -50,3 +50,4 @@ If we decide to change our privacy policy, we will post those changes on this pa
 - **April 2024**: Updates to include TelemetryDeck usage for VA Disability Pay mobile app, along with other slight organizational changes
 - **December 2025**: Updates to include TelemetryDeck usage for Military Retirement iOS mobile app.
 - **February 2026**: Updates to include TelemetryDeck for all Military Retirement mobile apps and website.
+- **April 2026**: Updates to include TelemetryDeck for all VA Disability Pay mobile apps.
