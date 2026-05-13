@@ -6,13 +6,13 @@ layout: default
     <h1 class="app-name">Military Retirement</h1>
     <div class="download-links">
         <div class="link apple-link">
-            <a href="https://apps.apple.com/app/apple-store/id563082328?pt=1614325&ct=military-retirement-webpage&mt=8">
-                <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1348617600&h=097d4c06207b7c833c551c7582859ef3" alt="Download on the App Store" draggable="false">
+            <a href="https://apps.apple.com/app/apple-store/id563082328?pt=1614325&ct=military-retirement-webpage&mt=8" target="_blank">
+                <img src="https://toolbox.marketingtools.apple.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&releaseDate=1348617600&h=097d4c06207b7c833c551c7582859ef3" alt="Download on the App Store" draggable="false">
             </a>
         </div>
         <div class="link android-link">
-            <a href="https://play.google.com/store/apps/details?id=com.LynnfieldLLC.MilitaryRetire">
-                <img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" draggable="false" />
+            <a href="https://play.google.com/store/apps/details?id=com.LynnfieldLLC.MilitaryRetire" target="_blank">
+                <img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" draggable="false" />
             </a>
         </div>
     </div>
