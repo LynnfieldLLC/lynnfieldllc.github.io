@@ -1,9 +1,10 @@
 ---
 layout: default
+permalink: /military-retire-app/
 ---
 
 <div class="app-header">
-    <h1 class="app-name">Military Retirement</h1>
+    <h1 class="app-name vt-mil-title">Military Retirement</h1>
     <div class="download-links">
         <div class="link apple-link">
             <a href="https://apps.apple.com/app/apple-store/id563082328?pt=1614325&ct=military-retirement-webpage&mt=8" target="_blank">
@@ -18,8 +19,8 @@ layout: default
     </div>
 </div>
 <div class="app-info">
-    <img class="app-icon" src="/assets/military_retire_icon.png" alt="" draggable="false" />
-    <div class="app-description">
+    <img class="app-icon vt-mil-icon" src="/assets/military_retire_icon.png" alt="" draggable="false" />
+    <div class="app-description vt-mil-desc">
         Military Retirement is an application intended to assist military personnel from all branches of military service by informing them of their benefits upon retirement from military service. Military Retirement gives assistance by calculating an estimation of retirement pay based on your personal information. Military Retirement incorporates four years of pay tables to provide the highest degree of accuracy. Compare multiple scenarios to determine which retirement option is best for you.
     </div>
 </div>

@@ -1,3 +1,49 @@
+@view-transition {
+  navigation: auto;
+}
+
+/* Animate the paired icons morphing between pages */
+::view-transition-group(vt-mil-icon),
+::view-transition-group(vt-va-icon),
+::view-transition-group(vt-mil-title),
+::view-transition-group(vt-va-title),
+::view-transition-group(vt-mil-desc),
+::view-transition-group(vt-va-desc) {
+  animation-duration: .45s;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+::view-transition-old(vt-mil-icon),
+::view-transition-new(vt-mil-icon),
+::view-transition-old(vt-va-icon),
+::view-transition-new(vt-va-icon) {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Titles differ in size between pages — cross-fade them instead of stretching */
+::view-transition-old(vt-mil-title),
+::view-transition-new(vt-mil-title),
+::view-transition-old(vt-va-title),
+::view-transition-new(vt-va-title) {
+  height: 100%;
+  width: auto;
+  object-fit: none;
+  object-position: left center;
+}
+
+/* Descriptions reflow width/height between pages — anchor top-left to fade */
+::view-transition-old(vt-mil-desc),
+::view-transition-new(vt-mil-desc),
+::view-transition-old(vt-va-desc),
+::view-transition-new(vt-va-desc) {
+  height: auto;
+  width: 100%;
+  object-fit: none;
+  object-position: left top;
+}
+
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
@@ -13,6 +59,9 @@ body {
   color: #454545;
   background-color: #FFF;
   -webkit-text-size-adjust: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -78,6 +127,20 @@ img { max-width: 100%; vertical-align: middle; }
   text-align: left;
   margin-bottom: 20px;
 }
+
+/* Smaller icons on the home page summaries */
+.app-summary .app-icon {
+  width: 140px;
+  height: 140px;
+}
+
+/* Cross-page (View Transitions API) — pair each home icon with its app page */
+.vt-mil-icon { view-transition-name: vt-mil-icon; }
+.vt-va-icon { view-transition-name: vt-va-icon; }
+.vt-mil-title { view-transition-name: vt-mil-title; }
+.vt-va-title { view-transition-name: vt-va-title; }
+.vt-mil-desc { view-transition-name: vt-mil-desc; }
+.vt-va-desc { view-transition-name: vt-va-desc; }
 
 .app-features {
   display: flex;
@@ -257,6 +320,7 @@ input:not([type=submit]), textarea, input[type=submit] {
 .page-content {
   padding: 30px 0;
   text-align: justify;
+  flex: 1 0 auto;
 }
 
 .post-header { margin-bottom: 30px; }
@@ -266,3 +330,35 @@ input:not([type=submit]), textarea, input[type=submit] {
   line-height: 1;
 }
 .post-content { margin-bottom: 30px; }
+
+/* Dark mode — follows the OS/browser preference */
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #d4d4d4;
+    background-color: #1C1C1E;
+    color-scheme: dark;
+  }
+
+  .app-summary { color: #ededed; }
+  .app-header .app-name { color: #ededed; }
+  .app-info { color: #d4d4d4; }
+
+  a { color: #6ea8fe; }
+  a:hover { color: #9ec5fe; }
+
+  blockquote {
+    color: #9a9a9a;
+    border-left-color: #6ea8fe;
+  }
+
+  pre, code {
+    border-color: #3a3a3a;
+  }
+  code { background-color: #1e1e1e; }
+  pre { background-color: #1e1e1e; }
+  pre > code { background-color: #1e1e1e; }
+
+  :not(.highlight) > table tr:nth-child(2n) { background-color: #1a1a1a; }
+
+  .footer { color: #9a9a9a; }
+}
