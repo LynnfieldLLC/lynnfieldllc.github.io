@@ -1,20 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  {% include head.html %}
+  <script src="https://cdn.telemetrydeck.com/websdk/telemetrydeck.min.js" data-app-id="C96370D1-07C8-455F-A7DF-46DF5BB5E61C"></script>
 
-  <body>
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ site.description }}">
 
-    {% include header.html %}
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="{{ site.url }}{{ page.url | replace: 'index.html', '' }}">
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#0B0690">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#0B0690">
+
+  {% if page.url contains 'military-retire-app' %}<meta name="apple-itunes-app" content="app-id=563082328">{% endif %}
+  {% if page.url contains 'va-disability-pay-app' %}<meta name="apple-itunes-app" content="app-id=1470561883">{% endif %}
+</head>
+<body>
+
+  <div class="site-header">
+    <h1><span><a class="site-title" href="/">{{ site.title }}</a></span></h1>
+    <nav class="site-nav">
+      <a class="page-link" href="/">Home</a>
+      <a class="page-link" href="/military-retire-app">Military Retirement App</a>
+      <a class="page-link" href="/va-disability-pay-app">VA Disability Pay App</a>
+      <a class="page-link" href="/contact-us">Contact Us</a>
+    </nav>
+  </div>
+
+  <div class="page-content">
+    <div class="wrapper">
+      {% if page.title %}
+      <div class="post">
+        <header class="post-header">
+          <h1 class="post-title">{{ page.title }}</h1>
+        </header>
+        <article class="post-content">
+          {{ content }}
+        </article>
       </div>
+      {% else %}
+      {{ content }}
+      {% endif %}
     </div>
+  </div>
 
-    {% include footer.html %}
+  <div class="footer" align="center">
+    <div>© 2026 Lynnfield, LLC</div>
+    <div class="links">
+      <a href="/privacy-policy">Privacy Policy</a>
+      <p class="separator">|</p>
+      <a href="/contact-us">Contact Us</a>
+    </div>
+    <div class="minor">Google Play and the Google Play logo are trademarks of Google Inc.</div>
+  </div>
 
-  </body>
-
+</body>
 </html>

@@ -1,16 +1,3 @@
-# Site settings
 title: Lynnfield LLC
-email:
 description: Lynnfield LLC
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://www.lynnfieldllc.com" # the base hostname & protocol for your site
-twitter_username: MilRetireApp
-
-# Build settings
-markdown: kramdown
-markdown_ext:  markdown,mkdown,mkdn,mkd,md
-
-redcarpet:
-  extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "fenced_code_blocks"]
-
-host: 0.0.0.0
+url: https://www.lynnfieldllc.com
