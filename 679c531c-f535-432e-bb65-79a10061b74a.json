@@ -1,13 +1,13 @@
 {
     "trajectorAdInfo": {
-        "shouldShow": true,
+        "shouldShow": false,
         "url": "https://www.trajectormedical.com/go/vaCalcLapp",
         "titleText": "Denied VA Disability Benefits?",
         "subtitleText": "Work with professionals who care.",
         "footerText": "Start today"
     },
     "trajectorAdInfoMR": {
-        "shouldShow": true,
+        "shouldShow": false,
         "url": "https://www.trajectormedical.com/go/milretapp",
         "titleText": "\"You guys changed my world\"",
         "subtitleText": "",
