@@ -12,5 +12,11 @@
         "titleText": "\"You guys changed my world\"",
         "subtitleText": "",
         "footerText": "Learn how Veterans make the benefits journey easier and the future brighter"
+    },
+    "tridentMortgageAdInfo": {
+        "shouldShow": true,
+        "url": "https://tridenthomeloans.com/loans-products/#va-home-loans",
+        "titleText": "Buying a home?",
+        "subtitleText": "Let Trident Mortgage help you get the best VA loan."
     }
 }
