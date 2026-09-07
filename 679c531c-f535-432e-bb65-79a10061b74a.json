@@ -14,7 +14,7 @@
         "footerText": "Learn how Veterans make the benefits journey easier and the future brighter"
     },
     "tridentMortgageAdInfo": {
-        "shouldShow": true,
+        "shouldShow": false,
         "url": "https://tridenthomeloans.com/military-retirement/?utm_source=military_retirement_app&utm_medium=app&utm_campaign=lynnfield",
         "titleText": "Buying a home?",
         "subtitleText": "Let Trident Home Loans help you start your next chapter with a VA home loan.",
