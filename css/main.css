@@ -152,6 +152,7 @@ img { max-width: 100%; vertical-align: middle; }
 .app-features h4 { font-weight: 500; }
 
 .screen-shot-container { margin-top: 20px; }
+.screen-shot-container .screenshot-dark { display: none; }
 
 @media only screen and (max-width: 500px) {
   .app-header {
@@ -342,6 +343,8 @@ input:not([type=submit]), textarea, input[type=submit] {
   .app-summary { color: #ededed; }
   .app-header .app-name { color: #ededed; }
   .app-info { color: #d4d4d4; }
+  .screen-shot-container .screenshot-light { display: none; }
+  .screen-shot-container .screenshot-dark { display: inline; }
 
   a { color: #6ea8fe; }
   a:hover { color: #9ec5fe; }

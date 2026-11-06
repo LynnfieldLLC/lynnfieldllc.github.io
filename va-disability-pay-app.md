@@ -26,7 +26,10 @@ permalink: /va-disability-pay-app/
 </div>
 
 <div class="screen-shot-container">
-    <a href="/assets/va_disability_screenshots.png" draggable="false">
-        <img src="/assets/va_disability_screenshots.png" alt="" draggable="false" />
+    <a class="screenshot-light" href="/assets/va_disability_screenshots.png" draggable="false">
+        <img src="/assets/va_disability_screenshots.png" alt="" draggable="false" loading="lazy" />
+    </a>
+    <a class="screenshot-dark" href="/assets/va_disability_screenshots_dark.png" draggable="false">
+        <img src="/assets/va_disability_screenshots_dark.png" alt="" draggable="false" loading="lazy" />
     </a>
 </div>

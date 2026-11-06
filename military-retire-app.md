@@ -49,7 +49,10 @@ permalink: /military-retire-app/
 </div>
 
 <div class="screen-shot-container">
-    <a href="/assets/military_retire_screenshots.png" draggable="false">
-        <img src="/assets/military_retire_screenshots.png" alt="" draggable="false" />
+    <a class="screenshot-light" href="/assets/military_retire_screenshots.png" draggable="false">
+        <img src="/assets/military_retire_screenshots.png" alt="" draggable="false" loading="lazy" />
+    </a>
+    <a class="screenshot-dark" href="/assets/military_retire_screenshots_dark.png" draggable="false">
+        <img src="/assets/military_retire_screenshots_dark.png" alt="" draggable="false" loading="lazy" />
     </a>
 </div>
