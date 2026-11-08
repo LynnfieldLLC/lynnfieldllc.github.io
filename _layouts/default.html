@@ -17,8 +17,9 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#0B0690">
-  <meta name="apple-mobile-web-app-status-bar-style" content="#0B0690">
+  <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#151E33" media="(prefers-color-scheme: dark)">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#151E33">
 
   {% if page.url contains 'military-retire-app' %}<meta name="apple-itunes-app" content="app-id=563082328">{% endif %}
   {% if page.url contains 'va-disability-pay-app' %}<meta name="apple-itunes-app" content="app-id=1470561883">{% endif %}
@@ -28,10 +29,10 @@
   <div class="site-header">
     <h1><span><a class="site-title" href="/">{{ site.title }}</a></span></h1>
     <nav class="site-nav">
-      <a class="page-link" href="/">Home</a>
-      <a class="page-link" href="/military-retire-app/">Military Retirement App</a>
-      <a class="page-link" href="/va-disability-pay-app/">VA Disability Pay App</a>
-      <a class="page-link" href="/contact-us/">Contact Us</a>
+      <a class="page-link{% if page.url == '/' or page.url == '/index.html' %} active{% endif %}" href="/">Home</a>
+      <a class="page-link{% if page.url == '/military-retire-app/' %} active{% endif %}" href="/military-retire-app/">Military Retirement App</a>
+      <a class="page-link{% if page.url == '/va-disability-pay-app/' %} active{% endif %}" href="/va-disability-pay-app/">VA Disability Pay App</a>
+      <a class="page-link{% if page.url == '/contact-us/' %} active{% endif %}" href="/contact-us/">Contact Us</a>
     </nav>
   </div>
 

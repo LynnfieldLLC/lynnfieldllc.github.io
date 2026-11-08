@@ -24,6 +24,14 @@ permalink: /va-disability-pay-app/
         VA Disability Pay is an application intended to assist military personnel from all branches of the military service by informing them of their disability benefits. VA Disability Pay gives assistance by calculating an estimation of Veterans Affairs (VA) disability pay. It also calculates an overall disability rating based on your combined individual disability ratings.
     </div>
 </div>
+<div class="app-features">
+    <h3 class="app-features-title">Features</h3>
+    <ul class="feature-list">
+        <li><strong>Combined rating</strong>Combine your individual ratings using VA math, rounded the same way the VA does.</li>
+        <li><strong>Track every rating</strong>Mark ratings as approved, pending, or denied, and flag bilateral conditions.</li>
+        <li><strong>Monthly pay</strong>Estimate your compensation based on your rating, marital status, and dependents.</li>
+    </ul>
+</div>
 
 <div class="screen-shot-container">
     <a class="screenshot-light" href="/assets/va_disability_screenshots.png" draggable="false">

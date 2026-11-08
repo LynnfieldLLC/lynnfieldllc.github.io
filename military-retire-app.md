@@ -25,26 +25,15 @@ permalink: /military-retire-app/
     </div>
 </div>
 <div class="app-features">
-    <h4>Military Retirement will calculate:</h4>
-    <ul>
-    <li>
-        RETIREMENT PAY : Based on Rank, Years and Months of Service, and Date of Retirement
-    </li>
-    <li>
-        SURVIVOR BENEFIT PLAN : Benefit and Premium
-    </li>
-    <li>
-        TRICARE MEDICAL INSURANCE : Options and Premium
-    </li>
-    <li>
-        DISABILITY PAY : Based on disability rating
-    </li>
-    <li>
-        VETERANS GROUP LIFE INSURANCE : Coverage and Premium
-    </li>
-    <li>
-        FEDERAL TAXES : Based on filing status
-    </li>
+    <h3 class="app-features-title">Features</h3>
+    <ul class="feature-list">
+        <li><strong>Retirement pay</strong>Estimate your monthly pension from your rank, time in service, retirement date, and retirement system.</li>
+        <li><strong>Compare scenarios</strong>Save multiple profiles to find the retirement date and options that suit you best.</li>
+        <li><strong>Survivor &amp; life coverage</strong>Estimate SBP and VGLI premiums and what your survivors would receive.</li>
+        <li><strong>TRICARE</strong>Compare coverage options and their monthly premiums.</li>
+        <li><strong>VA disability pay</strong>Factor in disability compensation based on your rating, marital status, and dependents.</li>
+        <li><strong>Income taxes</strong>Estimate federal and state taxes based on your filing status and residence.</li>
+        <li><strong>Income &amp; bills</strong>Add extra income and recurring bills for a fuller picture of your budget.</li>
     </ul>
 </div>
 
