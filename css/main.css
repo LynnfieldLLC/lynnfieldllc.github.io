@@ -398,8 +398,12 @@ input:not([type=submit]), textarea, input[type=submit] {
 }
 .site-header .site-nav .page-link:hover,
 .site-header .site-nav .page-link.active { color: var(--band-link-active); }
-.site-nav .page-link:hover::after,
-.site-nav .page-link.active::after { transform: scaleX(1); }
+.site-nav .page-link:hover::after { transform: scaleX(1); }
+/* Safari doesn't paint ::after after a cross-document view transition, so draw the current-page underline on the link */
+.site-header .site-nav .page-link.active {
+  background: linear-gradient(var(--accent), var(--accent)) left bottom / 100% 3px no-repeat;
+}
+.site-nav .page-link.active::after { display: none; }
 
 .footer {
   width: 100%;
