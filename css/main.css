@@ -133,7 +133,7 @@ img { max-width: 100%; vertical-align: middle; }
   justify-content: space-between;
   margin-bottom: 5px;
 }
-.app-header .app-name { font-weight: 600; color: var(--heading); }
+.app-header .app-name { font-weight: 600; color: var(--heading); line-height: 1.2; }
 .app-header .download-links {
   display: flex;
   align-items: center;
@@ -264,12 +264,13 @@ img { max-width: 100%; vertical-align: middle; }
 .screen-shot-container { margin-top: 20px; }
 .screen-shot-container .screenshot-dark { display: none; }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .app-header {
     flex-direction: column;
     justify-content: center;
+    text-align: center;
   }
-  .app-header .download-links { justify-content: center; }
+  .app-header .download-links { justify-content: center; gap: 10px; }
   .app-header .download-links .link { margin: 0; }
   .app-hero .app-icon {
     width: 100%;
@@ -397,11 +398,12 @@ input:not([type=submit]), textarea, input[type=submit] {
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  /* gap (not per-link margins) keeps wrapped rows centered */
+  gap: 0 30px;
+  padding: 10px 20px;
 }
 @media only screen and (max-width: 500px) {
-  .site-nav { padding-left: 10px !important; }
+  .site-nav { gap: 0 22px; padding: 8px 16px 10px; }
 }
 .site-header .site-nav .page-link {
   position: relative;
@@ -412,7 +414,6 @@ input:not([type=submit]), textarea, input[type=submit] {
   color: var(--band-link);
   transition: color .2s ease;
 }
-.site-nav .page-link:not(:last-child) { margin-right: 30px; }
 .site-nav .page-link::after {
   content: "";
   position: absolute;
