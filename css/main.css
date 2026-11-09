@@ -170,6 +170,35 @@ img { max-width: 100%; vertical-align: middle; }
   height: 140px;
 }
 
+/* On narrow screens, float a smaller icon so the description wraps around it instead of forming a thin column */
+@media only screen and (max-width: 600px) {
+  .app-info {
+    display: flow-root;
+    margin-bottom: 20px;
+  }
+  .app-info .app-icon {
+    float: left;
+    width: 112px;
+    height: 112px;
+    margin: 4px 16px 8px 0;
+  }
+  .app-summary .app-icon {
+    width: 96px;
+    height: 96px;
+  }
+  .app-info .app-description {
+    display: block;
+    margin-bottom: 0;
+  }
+  .app-summary .app-summary-name {
+    height: auto;
+    margin-bottom: 12px;
+    font-size: 1.6em;
+    line-height: 1.2;
+  }
+  .app-summary { padding: 16px 18px 4px; }
+}
+
 /* Cross-page (View Transitions API) — pair each home icon with its app page */
 .vt-mil-icon { view-transition-name: vt-mil-icon; }
 .vt-va-icon { view-transition-name: vt-va-icon; }
