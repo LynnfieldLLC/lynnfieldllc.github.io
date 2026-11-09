@@ -7,7 +7,8 @@
 
   <script src="https://cdn.telemetrydeck.com/websdk/telemetrydeck.min.js" data-app-id="C96370D1-07C8-455F-A7DF-46DF5BB5E61C"></script>
 
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  {% assign head_title = page.head_title | default: page.title %}
+  <title>{% if head_title %}{{ head_title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{{ site.description }}">
 
   <link rel="stylesheet" href="/css/main.css">
@@ -25,18 +26,21 @@
   {% if page.url contains 'va-disability-pay-app' %}<meta name="apple-itunes-app" content="app-id=1470561883">{% endif %}
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <div class="site-header">
-    <h1><span><a class="site-title" href="/">{{ site.title }}</a></span></h1>
-    <nav class="site-nav">
-      <a class="page-link{% if page.url == '/' or page.url == '/index.html' %} active{% endif %}" href="/">Home</a>
-      <a class="page-link{% if page.url == '/military-retire-app/' %} active{% endif %}" href="/military-retire-app/">Military Retirement App</a>
-      <a class="page-link{% if page.url == '/va-disability-pay-app/' %} active{% endif %}" href="/va-disability-pay-app/">VA Disability Pay App</a>
-      <a class="page-link{% if page.url == '/contact-us/' %} active{% endif %}" href="/contact-us/">Contact Us</a>
+  <header class="site-header">
+    {% comment %}The site name is the page's main heading only on the home page; other pages provide their own h1{% endcomment %}
+    {% if page.url == '/' or page.url == '/index.html' %}{% assign site_name_tag = 'h1' %}{% else %}{% assign site_name_tag = 'p' %}{% endif %}
+    <{{ site_name_tag }} class="site-name"><a class="site-title" href="/">{{ site.title }}</a></{{ site_name_tag }}>
+    <nav class="site-nav" aria-label="Main">
+      <a class="page-link{% if page.url == '/' or page.url == '/index.html' %} active{% endif %}"{% if page.url == '/' or page.url == '/index.html' %} aria-current="page"{% endif %} href="/">Home</a>
+      <a class="page-link{% if page.url == '/military-retire-app/' %} active{% endif %}"{% if page.url == '/military-retire-app/' %} aria-current="page"{% endif %} href="/military-retire-app/">Military Retirement App</a>
+      <a class="page-link{% if page.url == '/va-disability-pay-app/' %} active{% endif %}"{% if page.url == '/va-disability-pay-app/' %} aria-current="page"{% endif %} href="/va-disability-pay-app/">VA Disability Pay App</a>
+      <a class="page-link{% if page.url == '/contact-us/' %} active{% endif %}"{% if page.url == '/contact-us/' %} aria-current="page"{% endif %} href="/contact-us/">Contact Us</a>
     </nav>
-  </div>
+  </header>
 
-  <div class="page-content">
+  <main class="page-content" id="main-content">
     <div class="wrapper">
       {% if page.title %}
       <div class="post">
@@ -51,9 +55,9 @@
       {{ content }}
       {% endif %}
     </div>
-  </div>
+  </main>
 
-  <div class="footer" align="center">
+  <footer class="footer" align="center">
     <div>© 2026 Lynnfield, LLC</div>
     <div class="links">
       <a href="/privacy-policy/">Privacy Policy</a>
@@ -61,7 +65,7 @@
       <a href="/contact-us/">Contact Us</a>
     </div>
     <div class="minor">Google Play and the Google Play logo are trademarks of Google Inc.</div>
-  </div>
+  </footer>
 
 </body>
 </html>

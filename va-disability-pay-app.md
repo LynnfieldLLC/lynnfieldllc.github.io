@@ -1,5 +1,6 @@
 ---
 layout: default
+head_title: VA Disability Pay
 permalink: /va-disability-pay-app/
 ---
 
@@ -8,12 +9,12 @@ permalink: /va-disability-pay-app/
     <div class="download-links">
         <div class="link apple-link">
             <a href="https://apps.apple.com/us/app/va-disability-pay/id1470561883?itsct=apps_box_badge&amp;itscg=30200" target="_blank">
-                <img src="https://toolbox.marketingtools.apple.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&releaseDate=1348617600&h=097d4c06207b7c833c551c7582859ef3" alt="Download on the App Store">
+                <img src="https://toolbox.marketingtools.apple.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&releaseDate=1348617600&h=097d4c06207b7c833c551c7582859ef3" alt="Download on the App Store"><span class="visually-hidden"> (opens in new tab)</span>
             </a>
         </div>
         <div class="link android-link">
             <a href="https://play.google.com/store/apps/details?id=com.lynnfieldllc.vadisabilitypay" target="_blank">
-                <img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" draggable="false" />
+                <img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" draggable="false" /><span class="visually-hidden"> (opens in new tab)</span>
             </a>
         </div>
     </div>
@@ -25,7 +26,7 @@ permalink: /va-disability-pay-app/
     </div>
 </div>
 <div class="app-features">
-    <h3 class="app-features-title">Features</h3>
+    <h2 class="app-features-title">Features</h2>
     <ul class="feature-list">
         <li><strong>Combined rating</strong>Combine your individual ratings using VA math, rounded the same way the VA does.</li>
         <li><strong>Track every rating</strong>Mark ratings as approved, pending, or denied, and flag bilateral conditions.</li>
@@ -35,9 +36,9 @@ permalink: /va-disability-pay-app/
 
 <div class="screen-shot-container">
     <a class="screenshot-light" href="/assets/va_disability_screenshots.png" draggable="false">
-        <img src="/assets/va_disability_screenshots.png" alt="" draggable="false" loading="lazy" />
+        <img src="/assets/va_disability_screenshots.png" alt="VA Disability Pay app screenshots" draggable="false" loading="lazy" />
     </a>
     <a class="screenshot-dark" href="/assets/va_disability_screenshots_dark.png" draggable="false">
-        <img src="/assets/va_disability_screenshots_dark.png" alt="" draggable="false" loading="lazy" />
+        <img src="/assets/va_disability_screenshots_dark.png" alt="VA Disability Pay app screenshots" draggable="false" loading="lazy" />
     </a>
 </div>
